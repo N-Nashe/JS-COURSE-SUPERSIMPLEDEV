@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+
+    <style>
+   
+    </style>
+</head>
+<body>
+
+   <script>
+        console.log(typeof  true);
+        false;
+
+        console.log(3>5);
+
+        //comparison operators have a lower precedence than arithmetic operators
+        console.log(3+5>7);
+
+        //to avoid conversion behaviour  use === not ==
+        //the same applies to !== insetead of !=
+
+       // this is true as 3 is not the string "3"
+        console.log(3!=="3")
+
+        //this is false as "3" is converted to number 3
+        console.log(3!="3")
+        
+        //this is true as 5 is the same as the string "5.00"
+        console.log(5 == "5.00")
+
+        //this is false as 5 is not the same as the string "5.00"
+        console.log(5 === "5.00")
+
+        //this is an if statement that runs the code in the curly braces
+        //if the condition in the parentheses is true
+        //the else block runs if the condition is false
+        //content in the parentheses is called the condition
+        //this is where you put the boolean expression e.g 3>5
+        //you can also put in an "else" in case the condition is false
+        //the else block is optional
+        //else if can also be used to check multiple conditions e.g
+
+            const age= 18;
+        if(age>=18){
+            console.log("you can drink");
+        } else if(age ==17){
+            console.log("wait a bit longer");
+        } else{
+            console.log("you cannot drink");
+        }
+    
+
+        if (3>5) {
+            console.log("hello");
+        } else{
+            console.log("else");
+        }
+
+        //////////////////////////////////////////////////
+    
+
+        if(30>=16){
+            console.log("you can drive");
+        
+        } else{
+            console.log("you cannot drive");
+        }
+       /////////////////////
+       // this is the logical AND operator &&
+       // both conditions must be true for the whole expression to be true 
+        console.log(true && false);
+
+        console.log(0.2>=0 && 0.2<( )
+
+        
+    </script>
+</body>
+</html>

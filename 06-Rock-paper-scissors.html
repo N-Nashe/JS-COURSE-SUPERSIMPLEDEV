@@ -10,21 +10,100 @@
 <body>
     <p>Rock, paper, scissors</p>
     <button onclick="
+    let computerMove= '';
+
         const randomNumber = Math.random();
         if (randomNumber >= 0 && randomNumber < 1/3) {
-            console.log('Rock');
+             computerMove='Rock';
         } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
-            console.log('Paper');
+             computerMove= 'Paper';
         } else if(randomNumber >= 2/3 && randomNumber <1) {
-            console.log('Scissors');
+             computerMove='Scissors';
         }
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='Tie'; 
+        } else if(computerMove === 'Paper'){
+            result= 'You lose';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'You win';
+        }
+
+        alert(`You picked rock. Computer picked ${computerMove}). ${result}`);
+
+       
     ">Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
+    <button onclick="
+
+     let computerMove= '';
+
+        const randomNumber = Math.random();
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+             computerMove='Rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+             computerMove= 'Paper';
+        } else if(randomNumber >= 2/3 && randomNumber <1) {
+             computerMove='Scissors';
+        }
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='You win'; 
+        } else if(computerMove === 'Paper'){
+            result= 'Tie';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'You lose';
+        }
+
+        alert(`You picked paper. Computer picked ${computerMove}). ${result}`);
+
+
+    
+    ">Paper</button>
+    <button onclick="
+
+     let computerMove= '';
+
+        const randomNumber = Math.random();
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+             computerMove='Rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+             computerMove= 'Paper';
+        } else if(randomNumber >= 2/3 && randomNumber <1) {
+             computerMove='Scissors';
+        }
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='You lose'; 
+        } else if(computerMove === 'Paper'){
+            result= 'You win';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'Tie';
+        }
+
+        alert(`You picked scissors. Computer picked ${computerMove}). ${result}`);
+    
+    ">Scissors</button>
 
    <script>
     //logical operators let us combine boolean values
     //the && operator (AND) returns true if both values are true
+    console.log(true && true); // true
+    //the || operator (OR) returns true if at least one value/side is true
+    console.log(false || false); // false
+    //the ! operator (NOT) negates or results in the opposite of a boolean value
+    console.log(!true); // false
     //logical operators are the lowest precedence operators
     //followed by comparison operators
     //followed by arithmetic operators
@@ -32,6 +111,19 @@
     //arithmetic operators: + - * / %
     //comparison operators: < > <= >= == != === !==
     //logical operators: && || !
+
+    // if statements have a scope
+    //this limits where variables can be accessed
+    //this is denoted by curly braces {}
+    //helps avoid naming conflicts
+    //var doesn't follow scope rules
+    //let and const do follow scope rules
+
+    //computerMove is at the top of the onclick function 
+    //so that it can be accessed in the if statements below
+    //if it was declared inside the if statements
+    //it would not be accessible outside of those if statements
+    //this is because of scope
    </script>
 </body>
 </html>

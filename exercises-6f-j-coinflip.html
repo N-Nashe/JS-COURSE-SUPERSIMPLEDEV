@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //simulate a coin flip
+        //use Math.random() to get a random number between 0 and 1
+        //if the number is less than 0.5, it's heads
+        //if the number is 0.5 or more, it's tails
+        //store the result in a variable called result
+        //then compare the result to a guess variable
+        //if they match, log "you win"
+        //if they don't match, log "you lose"
+        const randomNumber = Math.random();
+        let result;
+       
+
+        if(randomNumber < 0.5){
+            result = "heads";
+            console.log("heads");
+        } else{
+            result = "tails";
+            console.log("tails");
+        }
+
+        const guess = "heads";
+
+        if (guess === result){
+            console.log("you win");
+        } else{
+            console.log("you lose");    
+        }
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <style>
+    </style>
+</head>
+<body>
+    <p>Rock, paper, scissors</p>
+    <button onclick="
+    const computerMove=pickComputerMove();
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='Tie'; 
+        } else if(computerMove === 'Paper'){
+            result= 'You lose';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'You win';
+        }
+
+        alert(`You picked rock. Computer picked ${computerMove}). ${result}`);
+
+       
+    ">Rock</button>
+    <button onclick="
+
+    const computerMove=pickComputerMove();
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='You win'; 
+        } else if(computerMove === 'Paper'){
+            result= 'Tie';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'You lose';
+        }
+
+        alert(`You picked paper. Computer picked ${computerMove}). ${result}`);
+
+
+    
+    ">Paper</button>
+    <button onclick="
+    const computerMove =pickComputerMove();
+
+   
+
+        
+
+        let result= '';
+        if(computerMove === 'Rock'){
+            result='You lose'; 
+        } else if(computerMove === 'Paper'){
+            result= 'You win';
+        }
+        else if(computerMove === 'Scissors'){
+            result= 'Tie';
+        }
+
+        alert(`You picked scissors. Computer picked ${computerMove}). ${result}`);
+    
+    ">Scissors</button>
+
+   <script>
+
+   
+ function pickComputerMove(){
+
+       let computerMove= '';
+
+        const randomNumber = Math.random();
+        if (randomNumber >= 0 && randomNumber < 1/3) {
+             computerMove='Rock';
+        } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+             computerMove= 'Paper';
+        } else if(randomNumber >= 2/3 && randomNumber <1) {
+             computerMove='Scissors';
+        }
+
+        return computerMove; 
+
+        //return statements let us get a value out of a function
+        //when you use return you ask the function to give you something back
+        //you can return a calculation
+        //you can return a variable 
+        //etc
+        //if you use return and leave it blank it will return undefined
+        //using return ends the function
+        //meaning any code after return will not be executed
+        //letComputerMove doesn't work within the curly braces of the function
+        //but it does work outside the curly braces of the function
+        //this is because of scope
+        //when inside the function let computerMove is in local scope
+        //when outside the function let computerMove is in global scope
+
+        //how the above works
+        //1. user clicks button
+        //2. onclick event calls pickComputerMove function
+        //3. function runs and computerMove is assigned a value
+        //4. function returns the value of computerMove
+        //5. the value of computerMove is used in the rest of the onclick code
+
+
+
+ }
+   </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
